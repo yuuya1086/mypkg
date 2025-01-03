@@ -25,7 +25,7 @@ setup(
         'console_scripts': [
             'talker = mypkg.talker:main',
             'listener = mypkg.listener:main',
-            'kabu = mypkg.kabu:main',
+             'kabu = mypkg.kabu:main',
 	],
     },
 )
