@@ -5,11 +5,11 @@ import random
 
 class Talker(Node):
     def __init__(self):
-        super().__init__("kabu")
+        super().__init__("Talker")
         self.pub = self.create_publisher(Float64, "kabu", 10)
         self.n = 10000.0
         self.add_initial_value = False
-        self.create_timer(5, self.cb)
+        self.create_timer(2, self.cb)
 
     def cb(self):
         msg = Float64()
