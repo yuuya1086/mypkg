@@ -15,12 +15,12 @@
 
 - 送信側
 ```bash
-   ros2 run mypkg kabu
+   $ ros2 run mypkg kabu
 ```
 
 - 受信側
 ```bash
-   ros2 topic echo /kabuka
+   $ ros2 topic echo /kabuka
 ```
 
 ## 実行例
@@ -28,7 +28,7 @@
 ## 必要なソフトウェア
 
 - Python
-  - テスト済みバージョン： 3.7~3.10
+  - テスト済みバージョン： 3.7~3.10<br>
 　- [テストで利用したコンテナ](https://hub.docker.com/repository/docker/ryuichiueda/ubuntu22.04-ros2)
 
 ## ライセンス
