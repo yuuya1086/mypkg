@@ -36,7 +36,7 @@
 - Python
   - テスト済みバージョン： 3.7~3.10<br>
 　
-　[テストで利用したコンテナ](https://hub.docker.com/repository/docker/ryuichiueda/ubuntu22.04-ros2)
+[テストで利用したコンテナ](https://hub.docker.com/repository/docker/ryuichiueda/ubuntu22.04-ros2)
 
 ## ライセンス
 
