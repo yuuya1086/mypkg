@@ -2,10 +2,13 @@
 ![test](https://github.com/yuuya1086/mypkg/actions/workflows/test.yml/badge.svg)
 [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 
+## 概要
+
+このプログラムは、株価の変動を擬似的に体験することができるROS 2のパッケージです。
 
 ## ノード
 
-これは、10000円分の株を買ったときの株価の変動を擬似的に体験することができるプログラムです。<br>
+10000円分の株を買ったときの株価が変動します。<br>
 
 ※値の増減はランダムなので、実際の株価の増減方法とは異なります。
 
@@ -13,7 +16,9 @@
 
 ## トピック
 
-このプログラムでは、株価の値がやり取りされます。
+- トピック名：kabuka
+
+- 株価が送信されています。
 
 ## 実行方法
 
@@ -22,35 +27,41 @@
    $ ros2 run mypkg kabu
 ```
 
-- 受信側
+- 受信側：もう一つの端末で入力してください。
 ```bash
    $ ros2 topic echo /kabuka
 ```
 
 ## 実行例
 
-![スクリーンショット 2025-01-04 235214](https://github.com/user-attachments/assets/ce0dd84d-e58d-48bf-9fdd-8d3e7f96802a)
+```bash
+   $ ros2 topic echo /kabuka
+   data: 10000.05
+   ---
+   data: 10000.46
+   ---
+   data: 10000.51
+   ---
+   data: 10000.81
+   ---
+   data: 10000.02
+   ---
+   data: 9999.57
+   ---
+```
 
 ## 必要なソフトウェア
 
 - Python
-  - テスト済みバージョン： 3.7~3.11<br>
+  - テスト済みバージョン：3.10<br>
 
 - ROS 2 のバージョン： foxy
-　
-- [テストで利用したコンテナ](https://hub.docker.com/repository/docker/ryuichiueda/ubuntu22.04-ros2)
 
+- Ubuntu のバージョン： 20.04
+　
 ## ライセンス
 
 - このソフトウェアパッケージは、3条項BSDライセンスの下、再頒布及び使用が許可されます。
 
 - © 2024 Yuuya Tanaka
 
-## テスト環境
-- Ubuntu 22.04 LTS
-
-
-
-　　　　　
-　
-　　　　
